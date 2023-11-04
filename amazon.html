@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+          /* margin: 10px 20px; */
+          background:rgb(190, 188, 188) ;
+        }
+      header{
+        display: flex;
+        justify-content: space-between;
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+      }
+      select{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        left: 23px;
+      }
+      /* .home-page{
+        height: 150vh;
+        background-color: pink;
+      }
+      .rasm-div{
+        width: 380px;
+        height: 420px;
+        background-color: #fff;
+      } */
+      .header{
+        background-color: #413f3f;
+        color: #fff;
+        height: 40px;
+      }
+      /* .rasm-div{
+        padding: 20px;
+      } */
+      input{
+        width: 900px;
+        height: 50px;
+        text-align: center;
+      }
+      button{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        right: 50px;
+        background-color: orange;
+        border: none;
+      }
+      .header span{
+        padding-left: 20px;
+        position: relative;
+        top: 10px;
+      }
+      /* .rasmmmmm .rasm-div{
+        position: relative;
+        
+      } */
+      .img img{
+        position:  relative;
+        top: 10px;
+        width: 100px;
+      }
+      .home-page{
+        width: 100%;
+        height: 100vh;
+        background: url(https://m.media-amazon.com/images/I/717RUPA1bDL._SX3000_.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .rasm1 {
+        display: flex;   
+      }
+      .rasm2 {
+        display: flex;
+      }
+      .rasm1 img{
+        width: 150px;
+        position: relative;
+        top: 50px;
+      }
+      .rasm2 img{
+        width: 150px;
+        position: relative;
+        top: 70px;
+      }
+      .home{
+        width: 360px;
+        height: 390px;
+        background-color:#fff;
+        margin-left: 30px;
+        
+      }
+      .home-2{
+        width: 360px;
+        height: 390px;
+        background-color:#fff;
+        margin-left: 30px;
+      }
+      .home-2 img{
+        height: 260px;
+        width: 280px;
+        position: relative;
+        left: 35px;
+        top: 30px;
+      }
+      .home-1{
+        
+        position: relative;
+        top: 400px;
+        display: flex;
+        /* justify-content: space-around; */
+      }
+      .home-3{
+        width: 360px;
+        height: 390px;
+        background-color:#fff;
+        margin-left: 30px;
+      }
+      .home-3 img{
+        height: 260px;
+        width: 280px;
+        position: relative;
+        left: 35px;
+        top: 30px;
+      }
+      .home-4{
+        height: 100vh;
+        position: relative;
+        top: 430px;
+        display: flex;
+        /* justify-content: space-around; */
+        background-color: rgb(190, 188, 188);
+      }
+      .home-5 img{
+        z-index: 3;
+        position: relative;
+        top: 40px;
+        background-color: #fff;
+        margin-left: 30px;
+
+      }
+      .home-5{
+        width: 100%;
+        height: 100vh;
+        /* background-color: rgb(255, 255, 255); */
+        /* background-color: red; */
+      }
+      .besh{
+        /* margin-top: 50px; */
+        height: 40vh;
+        position: relative;
+        top: 30px;
+        margin: 0 70px 0 30px;
+        background-color: rgb(255, 255, 255);
+      }
+      .home1-5 img{
+        z-index: 3;
+        position: relative;
+        top: 40px;
+        background-color: #fff;
+        margin-left: 30px;
+
+      }
+      .home1-5{
+        width: 100%;
+        height: 100vh;
+        /* background-color: rgb(255, 255, 255); */
+        /* background-color: red; */
+      }
+      .besh-1{
+
+        height: 40vh;
+        position: relative;
+        top: 30px;
+        margin: 30px 70px 0 30px;
+        background-color: rgb(255, 255, 255);
+      }
+      .home-7{
+        height: 100vh;
+        position: relative;
+        top: 50px;
+        display: flex;
+        /* justify-content: space-around; */
+        background-color: rgb(190, 188, 188);
+      }
+      .uy{
+        display: flex;
+        /* margin-top: 50px; */
+        height: 50vh;
+        position: relative;
+        /* top: 30px; */
+        bottom: 350px;
+        margin: 0 70px 0 30px;
+        background-color: rgb(255, 255, 255);
+        /* margin-right: 30px; */
+      }
+      /* .home1-5 img{
+        z-index: 3;
+        position: relative;
+        top: 40px;
+        background-color: #fff;
+        margin-left: 30px;
+
+      } */
+      /* .home1-5{
+        width: 100%;
+        height: 100vh;
+        /* background-color: rgb(255, 255, 255); */
+        /* background-color: red; */
+      /* } */ */
+      /* .besh-1{
+
+        height: 40vh;
+        position: relative;
+        top: 30px;
+        margin: 30px 70px 0 30px;
+        background-color: rgb(255, 255, 255);
+      } */
+      .home-8{
+        width: 100%;
+        height: 100vh;
+        /* background-color: rgb(255, 255, 255); */
+        /* background-color: red; */
+      }
+      .uy-h{
+        position: relative;
+        top: 20px;
+      }
+      .uy-h button{
+        position: relative;
+        top: 33px;
+        left: 20px;
+        width: 56px;
+        height: 25px;
+        border-radius: 3px;
+        color: #fff;
+        background-color: red;
+      }
+      .house{
+        position: relative;
+        bottom: 350px;
+      }
+      .jnni{
+        position: relative;
+        bottom: 710px;
+      }
+      .house-1{
+        position: relative;
+        bottom:680px;
+      }
+      .jnni-1{
+        position: relative;
+        bottom: 1050px;
+      }
+      .footer{
+        position: relative;
+        bottom: 1019px;
+        margin: 0 70px 0 30px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        line-height: 30px;
+        background-color: #fff;
+      }
+    </style>
+</head>
+<body>
+   <div class="head">
+    <header>
+        <div class="img">
+            <img src="amazon.img" alt="">
+        </div>
+        <h6 style="position: relative; top: 15px;">Deliver to <br> <strong> <i class="fa-solid fa-location-dot"></i> Uzbekistan</strong></h6>
+        <select >
+        <option>All</option>
+        <option>All departmant</option>
+        </select>
+        <input type="text" placeholder="Search Amazon">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <span style="position: relative; top: 15px;"> <img src="https://uzkoram.uz/wp-content/uploads/2018/04/uzbekistan-flag-300x200.jpg" width="14" height="9"> UZ <i class="fa-solid fa-chevron-down"></i></span>
+            <select style="position: relative; width: 100px; left: -10px;">
+                <option>
+                    Hello sign in <br><strong>Account & lists</strong>
+                </option>
+            </select>
+            <h6 style="position: relative; top: 15px;">
+                Return <br>& Order
+            </h6>
+            <!-- <img src="karzinka.jpg" alt=""> -->
+    </header>
+    <div class="header" style="padding-left: 10px;">
+        <i class="fa-solid fa-clipboard-list" style="position: relative; top: 10px;"></i> All
+        <span>Today's Deal's</span>
+        <span>Customer service</span>
+        <span>Registry</span>
+        <span>Gift cards</span>
+        <span>Sell</span>
+    </div>
+    <div class="home-page">
+       <div class="home-1">
+        <div class="home">
+            <h2 style="position: relative; top: 15px; left: 30px; font-size: 30px;">Gaming accessories</h2>
+        <div class="rasm1">
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg" alt=""> 
+            <!-- <h5>Headsets</h5> -->
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg" alt="">
+         <!-- <h5>Keyboards</h5> -->
+        </div>
+        <div class="rasm2">
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg" alt=""> 
+            <!-- <h5>Computer mice</h5> -->
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg" alt="">
+         <!-- <h5> Chairs</h5> -->
+        </div>
+        <a href="#" style="position: relative; top:130px; left: 30px; text-decoration: none;">See more</a>
+        </div>
+        <div class="home-2">
+            <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Toys Under $30</h2>
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469244_2584128_379x304_1X_en_US._SY304_CB609318944_.jpg" alt="">
+            <a href="#" style="position: relative; top: 70px; right: 200px; text-decoration: none;">Shop now</a>
+        </div>
+        <div class="home-2">
+            <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Electronics</h2>
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg" alt="">
+            <a href="#" style="position: relative; top: 70px; right: 200px; text-decoration: none;">See more</a>
+        </div>
+        <div class="home-2">
+            <h2 style="position: relative; top: 18px; left: 30px; font-size: 23px;">Home & Kitchen Under $30</h2>
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2022/img/Amazon_Exports/XCM_CUTTLE_1469391_2584745_379x304_1X_en_US._SY304_CB609304299_.jpg" alt="">
+            <a href="#" style="position: relative; top: 70px; right: 200px; text-decoration: none;">Shop now</a>
+        </div>
+       </div>
+       <div class="home-4">
+        <div class="home-3">
+            <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Toys Under $30</h2>
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_PC_1x._SY304_CB431800965_.jpg" alt="">
+
+            <a href="#" style="position: relative; top: 75px; right: 200px; text-decoration: none;">Shop now</a>
+        </div>
+        <div class="home-3">
+            <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Toys Under $30</h2>
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg" alt="">
+            <a href="#" style="position: relative; top: 75px; right: 200px; text-decoration: none;">Shop now</a>
+        </div>
+        <div class="home-3">
+            <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Toys Under $30</h2>
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Beauty_1x._SY304_CB432774351_.jpg" alt="">
+            <a href="#" style="position: relative; top: 75px; right: 200px; text-decoration: none;">Shop now</a>
+        </div>
+        <div class="home">
+          <h2 style="position: relative; top: 15px; left: 30px; font-size: 30px;">Gaming accessories</h2>
+      <div class="rasm1">
+          <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg" alt=""> 
+          <!-- <h5>Headsets</h5> -->
+      <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg" alt="">
+       <!-- <h5>Keyboards</h5> -->
+      </div>
+      <div class="rasm2">
+          <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg" alt=""> 
+          <!-- <h5>Computer mice</h5> -->
+      <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg" alt="">
+       <!-- <h5> Chairs</h5> -->
+      </div>
+      <a href="#" style="position: relative; top: 130px; left: 100px;text-decoration: none;">Shop now</a>
+       </div>
+    </div>
+    <div class="besh">
+      <div class="home-5">
+        <h2 style="font-size: 30px; position: relative; top: 20px; left: 25px;">Best Sellers in Books</h2>
+        <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg"  alt="">
+        <img src="https://m.media-amazon.com/images/I/81Xy1ugiWeL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71RxwXoyOFL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/81Xy1ugiWeL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71RxwXoyOFL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/81Xy1ugiWeL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg" alt="">
+       </div>
+    </div>
+    <div class="besh-1">
+      <div class="home1-5">
+        <h2 style="font-size: 30px; position: relative; top: 20px; left: 25px;">Most wished for in Movies & TV
+        </h2>
+        <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg"  alt="">
+        <img src="https://m.media-amazon.com/images/I/81Xy1ugiWeL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71RxwXoyOFL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/81Xy1ugiWeL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71RxwXoyOFL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/81Xy1ugiWeL._AC_SY200_.jpg" alt="">
+        <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg" alt="">
+       </div>
+    </div>
+    <div class="home-7">
+      <div class="home-3">
+          <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Toys Under $30</h2>
+          <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_PC_1x._SY304_CB431800965_.jpg" alt="">
+
+          <a href="#" style="position: relative; top: 75px; right: 200px; text-decoration: none;">Shop now</a>
+      </div>
+      <div class="home-3">
+          <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Toys Under $30</h2>
+          <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg" alt="">
+          <a href="#" style="position: relative; top: 75px; right: 200px; text-decoration: none;">Shop now</a>
+      </div>
+      <div class="home-3">
+          <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Toys Under $30</h2>
+          <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Beauty_1x._SY304_CB432774351_.jpg" alt="">
+          <a href="#" style="position: relative; top: 75px; right: 200px; text-decoration: none;">Shop now</a>
+      </div>
+      <div class="home">
+        <h2 style="position: relative; top: 15px; left: 30px; font-size: 30px;">Gaming accessories</h2>
+    <div class="rasm1">
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg" alt=""> 
+        <!-- <h5>Headsets</h5> -->
+    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg" alt="">
+     <!-- <h5>Keyboards</h5> -->
+    </div>
+    <div class="rasm2">
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg" alt=""> 
+        <!-- <h5>Computer mice</h5> -->
+    <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg" alt="">
+     <!-- <h5> Chairs</h5> -->
+    </div>
+    <a href="#" style="position: relative; top: 130px; left: 100px;text-decoration: none;">Shop now</a>
+     </div>
+  </div>
+  <div class="uy">
+    <div class="home-8">
+      <h2 style="position: relative; top: 20px; left: 20px; font-size: 28px;">Exciting deals</h2> <a href="#" style="position: relative; bottom: 189px; left: 200px; font-size: 19px; text-decoration: none;">See all deals</a>
+      <img src="https://m.media-amazon.com/images/I/41qvcjiuTML._AC_SY200_.jpg" style="position: relative; top: 40px; right: 40px;" alt="">
+     <div class="uy-h">
+      <button>37% off</button> <h6 style="color: red; position: relative; left: 80px; top: 10px; font-size: 17px;">Deal</h6>
+      <h3 style="position: relative; top: 20px; left: 20px;">$ 143.71</h3> <p  style="position: relative;  left: 20px; top: 20px;">List Price: $226.93</p>
+      <p style="position: relative; top: 20px;  left: 20px;">
+        Harry Potter Hardcover Boxed Set: Books 1-7
+        </p>
+     </div>
+    </div>
+    <div class="home-8">
+      <h2 style="position: relative; top: 20px; left: 20px; font-size: 28px;">Exciting deals</h2> <a href="#" style="position: relative; bottom: 189px; left: 200px; font-size: 19px; text-decoration: none;">See all deals</a>
+      <img src="https://m.media-amazon.com/images/I/51-n54brCAL._AC_SY200_.jpg" style="position: relative; top: 40px; right: 40px;" alt="">
+     <div class="uy-h">
+      <button>37% off</button> <h6 style="color: red; position: relative; left: 80px; top: 10px; font-size: 17px;">Deal</h6>
+      <h3 style="position: relative; top: 20px; left: 20px;">$ 143.71</h3> <p  style="position: relative;  left: 20px; top: 20px;">List Price: $226.93</p>
+      <p style="position: relative; top: 20px;  left: 20px;">
+        Harry Potter Hardcover Boxed Set: Books 1-7
+        </p>
+     </div>
+    </div>
+    <div class="home-8">
+      <h2 style="position: relative; top: 20px; left: 20px; font-size: 28px;">Exciting deals</h2> <a href="#" style="position: relative; bottom: 189px; left: 200px; font-size: 19px; text-decoration: none;">See all deals</a>
+      <img src="https://m.media-amazon.com/images/I/41qvcjiuTML._AC_SY200_.jpg" style="position: relative; top: 40px; right: 40px;" alt="">
+     <div class="uy-h">
+      <button>37% off</button> <h6 style="color: red; position: relative; left: 80px; top: 10px; font-size: 17px;">Deal</h6>
+      <h3 style="position: relative; top: 20px; left: 20px;">$ 143.71</h3> <p  style="position: relative;  left: 20px; top: 20px;">List Price: $226.93</p>
+      <p style="position: relative; top: 20px;  left: 20px;">
+        Harry Potter Hardcover Boxed Set: Books 1-7
+        </p>
+     </div>
+    </div>
+    <div class="home-8">
+      <h2 style="position: relative; top: 20px; left: 20px; font-size: 28px;">Exciting deals</h2> <a href="#" style="position: relative; bottom: 189px; left: 200px; font-size: 19px; text-decoration: none;">See all deals</a>
+      <img src="https://m.media-amazon.com/images/I/51-n54brCAL._AC_SY200_.jpg" style="position: relative; top: 40px; right: 40px;" alt="">
+     <div class="uy-h">
+      <button>37% off</button> <h6 style="color: red; position: relative; left: 80px; top: 10px; font-size: 17px;">Deal</h6>
+      <h3 style="position: relative; top: 20px; left: 20px;">$ 143.71</h3> <p  style="position: relative;  left: 20px; top: 20px;">List Price: $226.93</p>
+      <p style="position: relative; top: 20px;  left: 20px;">
+        Harry Potter Hardcover Boxed Set: Books 1-7
+        </p>
+     </div>
+    </div>
+  </div>
+ <div class="house">
+  <div class="home-7">
+    <div class="home-3">
+        <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Toys Under $30</h2>
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_PC_1x._SY304_CB431800965_.jpg" alt="">
+
+        <a href="#" style="position: relative; top: 75px; right: 200px; text-decoration: none;">Shop now</a>
+    </div>
+    <div class="home-3">
+        <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Toys Under $30</h2>
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg" alt="">
+        <a href="#" style="position: relative; top: 75px; right: 200px; text-decoration: none;">Shop now</a>
+    </div>
+    <div class="home-3">
+        <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Toys Under $30</h2>
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Beauty_1x._SY304_CB432774351_.jpg" alt="">
+        <a href="#" style="position: relative; top: 75px; right: 200px; text-decoration: none;">Shop now</a>
+    </div>
+    <div class="home">
+      <h2 style="position: relative; top: 15px; left: 30px; font-size: 30px;">Gaming accessories</h2>
+  <div class="rasm1">
+      <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg" alt=""> 
+      <!-- <h5>Headsets</h5> -->
+  <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg" alt="">
+   <!-- <h5>Keyboards</h5> -->
+  </div>
+  <div class="rasm2">
+      <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg" alt=""> 
+      <!-- <h5>Computer mice</h5> -->
+  <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg" alt="">
+   <!-- <h5> Chairs</h5> -->
+  </div>
+  <a href="#" style="position: relative; top: 130px; left: 100px;text-decoration: none;">Shop now</a>
+   </div>
+</div>
+ </div>
+ <div class="jnni">
+  <div class="besh">
+    <div class="home-5">
+      <h2 style="font-size: 30px; position: relative; top: 20px; left: 25px;">Best Sellers in Books</h2>
+      <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg"  alt="">
+      <img src="https://m.media-amazon.com/images/I/81Xy1ugiWeL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/71RxwXoyOFL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/81Xy1ugiWeL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/71RxwXoyOFL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/81Xy1ugiWeL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg" alt="">
+     </div>
+  </div>
+ </div>
+ <div class="house-1">
+  <div class="home-7">
+    <div class="home-3">
+        <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Toys Under $30</h2>
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_PC_1x._SY304_CB431800965_.jpg" alt="">
+
+        <a href="#" style="position: relative; top: 75px; right: 200px; text-decoration: none;">Shop now</a>
+    </div>
+    <div class="home-3">
+        <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Toys Under $30</h2>
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg" alt="">
+        <a href="#" style="position: relative; top: 75px; right: 200px; text-decoration: none;">Shop now</a>
+    </div>
+    <div class="home-3">
+        <h2 style="position: relative; top: 18px; left: 30px; font-size: 28px;">Toys Under $30</h2>
+        <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Beauty_1x._SY304_CB432774351_.jpg" alt="">
+        <a href="#" style="position: relative; top: 75px; right: 200px; text-decoration: none;">Shop now</a>
+    </div>
+    <div class="home">
+      <h2 style="position: relative; top: 15px; left: 30px; font-size: 30px;">Gaming accessories</h2>
+  <div class="rasm1">
+      <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg" alt=""> 
+      <!-- <h5>Headsets</h5> -->
+  <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg" alt="">
+   <!-- <h5>Keyboards</h5> -->
+  </div>
+  <div class="rasm2">
+      <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg" alt=""> 
+      <!-- <h5>Computer mice</h5> -->
+  <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg" alt="">
+   <!-- <h5> Chairs</h5> -->
+  </div>
+  <a href="#" style="position: relative; top: 130px; left: 100px;text-decoration: none;">Shop now</a>
+   </div>
+</div>
+ </div>
+ <div class="jnni-1">
+  <div class="besh">
+    <div class="home-5">
+      <h2 style="font-size: 30px; position: relative; top: 20px; left: 25px;">Best Sellers in Books</h2>
+      <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg"  alt="">
+      <img src="https://m.media-amazon.com/images/I/81Xy1ugiWeL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/71RxwXoyOFL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/81Xy1ugiWeL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/71RxwXoyOFL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/81Xy1ugiWeL._AC_SY200_.jpg" alt="">
+      <img src="https://m.media-amazon.com/images/I/71pL+3nMzfL._AC_SY200_.jpg" alt="">
+    </div>
+     </div>
+ </div>
+ <div class="footer">
+  <h4>See personalized recommendations</h4>
+  <button style="background-color: #fffb00; width: 259px; height: 35px; position: relative; left: 2px; border-radius: 7px;">Sign in</button>
+  <span style="display: flex; position: relative; text-align: center; align-items: center; justify-content: center;"><h6 style="font-size: 15px;">New customer?</h6> <a href="#" style="text-decoration: none;">Start here.</a></span>
+ </div>
+</body>
+</html>
